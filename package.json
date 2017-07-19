@@ -1,15 +1,18 @@
 {
-  "name": "redux-simple-starter",
+  "name": "youtube_api_react",
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:veleda3/youtube_api_react.git"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "",
+  "author": "Daniel Velez",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
@@ -22,7 +25,7 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
@@ -32,6 +35,15 @@
     "react-dom": "^0.14.3",
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "webpack": "^1.15.0",
+    "youtube-api-search": "0.0.5"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "directories": {
+    "test": "test"
   }
 }
